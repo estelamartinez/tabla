@@ -1,0 +1,54 @@
+body {
+    background-color: white;
+    text-align: center;
+}
+
+/* Línea gris debajo del título */
+.separator {
+    width: 100%; /* No ocupa todo el ancho */
+    height: 2px;
+    background-color: gray;
+    margin: 0 auto 20px auto; /* Centrado, con espacio inferior para separar de la tabla */
+}
+
+h2 {
+    color: white;
+    text-align: left;
+    margin: -10px 0 50px 0; /* Margin-top negativo para subir el título, reducir margin-bottom */
+    font-size: 36px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Contenedor para el borde alrededor de la tabla (con marco fino) */
+.table-container {
+    border: 1px solid black;  /* Marco fino negro alrededor del contenedor */
+    padding: 30px;
+    display: inline-block;
+    margin: 0 auto;
+    background-color: blue;  /* Mantener el fondo azul */
+    width: 800px;
+}
+
+table {
+    border: none;
+    border-collapse: separate;
+    border-spacing: 1px;
+    margin: 0 auto;
+    background-color: blue;  /* Mantener el fondo azul */
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    padding: 10px 20px;
+    border: 1px solid white; /* Borde blanco entre celdas */
+    color: yellow;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Asegurar que las celdas vacías no tengan fondo visible */
+td:empty {
+    background-color: blue; /* Mantener el fondo azul para celdas vacías */
+}
